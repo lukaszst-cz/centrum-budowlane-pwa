@@ -4,6 +4,14 @@
 
 > **Status:** demonstracja funkcjonalna na danych symulacyjnych. To nie jest gotowy wielostanowiskowy system ERP. Dane i pliki pozostają lokalnie w przeglądarce, a przełączanie ról nie jest uwierzytelnieniem ani zabezpieczeniem danych.
 
+## Dostępna publikacja na Vercelu
+
+- [Strona prezentacyjna](https://centrum-budowlane-pwa.vercel.app/)
+- [Uruchom aplikację PWA](https://centrum-budowlane-pwa.vercel.app/app/)
+- [Pobierz Excel finansowy](https://centrum-budowlane-pwa.vercel.app/downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx)
+
+Publikację obsługuje Vercel podłączony do gałęzi `main`. Aplikacja działa w przeglądarce i używa lokalnych danych demonstracyjnych. Repozytorium GitHub pozostaje prywatne, więc kod mogą przeglądać tylko uprawnione osoby. Zmiana na Public wymaga ustawienia widoczności w GitHub Settings.
+
 ## Dwa punkty wejścia
 
 | Ścieżka | Przeznaczenie |
@@ -45,21 +53,13 @@ Arkusz do pobrania: [Centrum Budowlane, model finansowy 2026](downloads/Centrum_
 
 Szczegółowe informacje: [README aplikacji](app/README.md), [scenariusze testowe](app/SCENARIUSZE_TESTOWE.md), [źródła materiałów wizualnych](app/FOTOGRAFIE_I_LICENCJE.md).
 
-## Publikacja przez GitHub Pages
+## Wdrożenie i GitHub Pages
 
-1. Utwórz **nowe publiczne repozytorium** na GitHub, rekomendowana nazwa `centrum-budowlane-pwa`.
-2. Wgraj **zawartość tego katalogu** do gałęzi `main`, zachowując foldery `.github`, `app` i `screens`.
-3. Wejdź w **Settings → Pages → Build and deployment → Source → GitHub Actions**. Workflow `.github/workflows/pages.yml` opublikuje landing page oraz aplikację. [Instrukcja GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-4. Po publikacji link prezentacji powinien mieć format `https://lukaszst-cz.github.io/centrum-budowlane-pwa/`, a aplikacji `.../app/`. Konkretne URL-e sprawdź w Settings → Pages i Actions. Link GitHub Pages zostanie aktywowany po pierwszym wdrożeniu i konfiguracji Settings → Pages.
-5. Po utworzeniu repozytorium zaktualizuj `showcase` link do kodu (obecnie prowadzi do profilu GitHub) oraz dodaj prawidłowy adres publiczny do opisu repozytorium i sekcji About.
+**Działające publiczne demo hostuje Vercel.** Projekt jest połączony z repozytorium `lukaszst-cz/centrum-budowlane-pwa` i automatycznie publikowany z gałęzi `main`. Nie trzeba włączać GitHub Pages, aby korzystać z aplikacji.
 
-### Zalecana karta repozytorium
+GitHub Pages pozostaje alternatywą. Repozytorium jest obecnie prywatne, więc GitHub Pages nie został aktywowany. Gdy repozytorium będzie publiczne, można przejść do `Settings → Pages`, wybrać `Source: GitHub Actions` i ręcznie uruchomić workflow `.github/workflows/pages.yml`. Workflow nie wykonuje już nieudanych prób przy każdym commicie.
 
-**Description:** `Polska demonstracyjna aplikacja PWA dla centrum budowlanego: zamówienia, magazyn, tartak, HDS, dokumenty, marże i role.`
-
-**Topics:** `pwa`, `construction`, `warehouse-management`, `document-workflow`, `logistics`, `javascript`, `erp-demo`, `polish`.
-
-**About website:** po uruchomieniu GitHub Pages, publiczny adres strony prezentacyjnej.
+**Informacja:** prywatność kodu w repozytorium GitHub nie ogranicza dostępu do opublikowanej, demonstracyjnej strony i aplikacji na Vercelu.
 
 ## Testy przed publikacją
 
@@ -92,4 +92,4 @@ Sprawdzono pulpit, stronę prezentacyjną i system wizualny w rozmiarach 1440 px
 ## Repozytorium źródłowe
 
 Kod i pliki projektu: [github.com/lukaszst-cz/centrum-budowlane-pwa](https://github.com/lukaszst-cz/centrum-budowlane-pwa).
-Po włączeniu GitHub Pages strona powinna być dostępna pod adresem: [lukaszst-cz.github.io/centrum-budowlane-pwa](https://lukaszst-cz.github.io/centrum-budowlane-pwa/). Aplikacja pod `/app/`.
+Strona i aplikacja są opublikowane na Vercelu. Repozytorium pozostaje prywatne, a GitHub Pages jest opcjonalnym wariantem na przyszłość.

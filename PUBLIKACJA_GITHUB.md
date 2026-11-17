@@ -1,24 +1,24 @@
-# Publikacja na GitHubie · instrukcja dla właściciela
+# Publikacja Centrum Budowlane PWA
 
-**Stan:** pliki gotowe do udostępnienia. Repozytorium projektu nie zostało jeszcze utworzone ani opublikowane.
+## Aktualny stan
 
-1. Otwórz <https://github.com/new> będąc zalogowanym na swoim koncie.
-2. Nazwa repozytorium: `centrum-budowlane-pwa`. Widoczność: **Public**. Możesz nie dodawać automatycznego README, ponieważ projekt już zawiera kompletne README.
-3. Prześlij zawartość paczki ZIP (po rozpakowaniu) do `main`, nie wgrywaj samego pliku ZIP. Foldery `app`, `screens`, `.github` muszą leżeć obok głównego `index.html`.
-4. Otwórz **Settings > Pages**. Zmień **Source** na **GitHub Actions** i zapisz. Plik `.github/workflows/pages.yml` uruchamia publikację.
-5. Wejdź do **Actions**, sprawdź wykonanie `Publikacja GitHub Pages`. Po zakończeniu odwiedź adres podany w Settings > Pages.
-6. Otwórz link na komputerze i telefonie, przetestuj przycisk **Uruchom demo**, rolę Kierowca HDS, obieg dokumentów, import i instalację PWA.
-7. Uzupełnij link `Profil GitHub` w `index.html` konkretnym linkiem do nowego repozytorium i dodaj adres strony do repozytorium w sekcji About.
+Aplikacja i strona prezentacyjna są już opublikowane na Vercelu:
 
-**Wariant terminalowy (gdy repozytorium jest już utworzone):**
+- Strona projektu: https://centrum-budowlane-pwa.vercel.app/
+- Aplikacja: https://centrum-budowlane-pwa.vercel.app/app/
+- Excel: https://centrum-budowlane-pwa.vercel.app/downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx
 
-```bash
-git init
-git add .
-git commit -m "feat: launch construction center PWA showcase"
-git branch -M main
-git remote add origin https://github.com/TWOJE-KONTO/centrum-budowlane-pwa.git
-git push -u origin main
-```
+Repozytorium źródłowe: https://github.com/lukaszst-cz/centrum-budowlane-pwa. Jest obecnie prywatne. Vercel jest podłączony do gałęzi `main` i publikuje jej zmiany.
 
-GitHub Pages udostępnia statyczną aplikację i landing page. Nie uruchamia backendu, logowania wielostanowiskowego ani wspólnej bazy danych.
+## Jeśli w przyszłości chcesz uruchomić GitHub Pages
+
+1. W GitHub `Settings → General → Danger Zone` zmień repozytorium na publiczne, jeśli chcesz udostępniać też źródła.
+2. W `Settings → Pages` wybierz `Source: GitHub Actions`, jeżeli taka opcja jest dostępna.
+3. Uruchom ręcznie workflow `Publikacja GitHub Pages` w zakładce Actions.
+4. Sprawdź wynik oraz linki do strony, aplikacji i Excela.
+
+GitHub Pages nie jest obecnie potrzebny do demonstracji. Automatyczne próby uruchamiania Pages na prywatnym repozytorium zostały wyłączone.
+
+## Ograniczenia demonstracji
+
+Dane pozostają lokalnie w przeglądarce. Przełączanie ról nie jest uwierzytelnianiem. Przed wdrożeniem dla rzeczywistych pracowników wymagane są backend, role serwerowe, wspólna baza danych i bezpieczny obieg dokumentów.
