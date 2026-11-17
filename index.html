@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#06182d" />
+  <meta name="description" content="Centrum Budowlane: prezentacja demonstracyjnej aplikacji PWA do zarządzania sprzedażą, hurtownią, tartakiem, transportem HDS i obiegiem dokumentów." />
+  <meta property="og:title" content="Centrum Budowlane | Operacje" />
+  <meta property="og:description" content="Zintegrowany system operacyjny dla centrum budowlanego. Zobacz moduły i uruchom interaktywne demo PWA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./hero-centrum.webp" />
+  <title>Centrum Budowlane | Studium projektu PWA</title>
+  <link rel="icon" href="./app/assets/icon-192.png" sizes="192x192" />
+  <link rel="stylesheet" href="./showcase.css" />
+  <link rel="stylesheet" href="./design-system/tokens.css" />
+  <link rel="stylesheet" href="./showcase-visual.css" />
+</head>
+<body>
+ <div class="topline"></div>
+ <header class="sitehead" id="top">
+   <a class="logo" href="#top" aria-label="Centrum Budowlane, początek strony"><span class="roofmark"><svg viewBox="0 0 52 43" aria-hidden="true"><path d="M3 23 26 7 49 23M3 38 26 22 49 38" fill="none" stroke="currentColor" stroke-width="6"/></svg></span><span>Centrum <strong>Budowlane</strong><small>Projekt systemu operacyjnego</small></span></a>
+   <button class="hamburger" id="menu-btn" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+   <nav class="nav" id="nav" aria-label="Nawigacja główna"><a href="#idea">Koncepcja</a><a href="#dzialy">Działy</a><a href="#obieg">Obieg</a><a href="#grafika">Grafika</a><a href="#widoki">Ekrany</a><a href="#technologia">Technologia</a><a href="./app/" class="nav-cta">Uruchom demo <span aria-hidden="true">↗</span></a></nav>
+ </header>
+ <main>
+  <section class="hero">
+   <div class="hero-photo" role="img" aria-label="Fotorealistyczna wizualizacja składu budowlanego i transportu HDS"></div>
+   <div class="hero-shade"></div>
+   <div class="hero-inner wrap">
+     <div class="hero-content"><div class="flag"><span class="flag-line"></span> Studium projektu / PWA / 2026</div>
+     <h1>Jedno centrum.<br><span>Wiele procesów.</span><br>Jeden system.</h1>
+     <p>Operacyjne zaplecze dużej hurtowni budowlanej: sprzedaż, elektryka, tartak, inwestorzy, magazyny, transport HDS, finanse i dokumenty w jednym interfejsie.</p>
+     <div class="hero-actions"><a href="./app/" class="btn primary">Otwórz aplikację <span aria-hidden="true">↗</span></a><a class="btn secondary" href="./downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx" download>Pobierz Excel <span aria-hidden="true">↓</span></a><a class="btn secondary" href="#widoki">Zobacz ekrany <span aria-hidden="true">↓</span></a></div>
+     <div class="hero-note"><span class="indicator"></span> Działająca wersja demonstracyjna, dane symulacyjne</div>
+     </div>
+   </div>
+   <div class="hero-side-label">SPRZEDAŻ / PRODUKCJA / LOGISTYKA</div>
+  </section>
+  <div class="feature-strip"><div class="wrap strip-inner"><span>SPRZEDAŻ B2B</span><i></i><span>HURTOWNIA BUDOWLANA</span><i></i><span>ELEKTRYKA</span><i></i><span>TARTAK</span><i></i><span>FLOTA HDS</span><i></i><span>OBIEG DOKUMENTÓW</span></div></div>
+
+  <section id="idea" class="section intro wrap">
+   <div class="section-side"><span class="section-num">01 / KONCEPCJA</span><p>System zaprojektowany na przykładzie wielodziałowego centrum budowlanego.</p></div>
+   <div class="intro-main"><span class="eyebrow">Od zamówienia do rozliczenia</span><h2>Procesy nie kończą się<br>na granicy <em>działu.</em></h2><p>Inwestor zamawia materiały budowlane, przewody elektryczne i elementy więźby. Handlowiec przygotowuje jedną wycenę. Magazyn kompletuje towar, tartak realizuje produkcję, a dyspozytor planuje transport. Dokumenty trafiają do biura bez ponownego wprowadzania numerów.</p><div class="intro-lines"><div><strong>11</strong><span>profili ról i uprawnień w demonstracji</span></div><div><strong>4</strong><span>obszary działalności i rozliczeń</span></div><div><strong>1</strong><span>wspólna historia zamówienia</span></div></div></div>
+  </section>
+
+  <section id="dzialy" class="section departments">
+   <div class="wrap"><div class="section-head"><div><span class="section-num">02 / DZIAŁALNOŚĆ</span><h2>Cztery światy.<br>Jedna organizacja.</h2></div><p>Każdy dział ma osobne operacje i koszty, ale pracuje na wspólnych zamówieniach, kartotekach kontrahentów i dokumentach.</p></div>
+    <div class="department-grid">
+      <a href="./app/" class="department-card construction"><div class="dept-photo"></div><div class="dept-content"><span class="dept-index">01 / HANDEL</span><h3>Hurtownia<br>budowlana</h3><p>Stany, zamówienia, marże, rezerwacje i wydania materiałów.</p><span class="dept-arrow">Otwórz moduły <span>↗</span></span></div></a>
+      <a href="./app/" class="department-card electric"><div class="dept-photo"></div><div class="dept-content"><span class="dept-index">02 / INSTALACJE</span><h3>Hurtownia<br>elektryczna</h3><p>Cenniki, zakupy, kable, osprzęt i kontrola marż.</p><span class="dept-arrow">Otwórz moduły <span>↗</span></span></div></a>
+      <a href="./app/" class="department-card sawmill"><div class="dept-photo"></div><div class="dept-content"><span class="dept-index">03 / PRODUKCJA</span><h3>Tartak<br>i produkcja</h3><p>Surowiec, uzysk, zlecenia, koszt jednostkowy i gotowe wyroby.</p><span class="dept-arrow">Otwórz moduły <span>↗</span></span></div></a>
+      <a href="./app/" class="department-card transport"><div class="dept-photo"></div><div class="dept-content"><span class="dept-index">04 / DOSTAWY</span><h3>Transport<br>i HDS</h3><p>Flota, trasy, potwierdzenia odbioru i koszty eksploatacji.</p><span class="dept-arrow">Otwórz moduły <span>↗</span></span></div></a>
+    </div>
+   </div>
+  </section>
+
+  <section id="obieg" class="section process-section"><div class="wrap"><div class="section-head light"><div><span class="section-num">03 / PRZEPŁYW PRACY</span><h2>Od pierwszego telefonu<br>do zamknięcia dostawy.</h2></div><p>Jeden obieg dla handlu, magazynu, tartaku, transportu i księgowości, z kontrolą odpowiedzialności na każdym etapie.</p></div>
+   <div class="process-rail">
+    <div class="process-item"><span class="process-n">01</span><span class="process-icon">◎</span><h3>Zapytanie i wycena</h3><p>Inwestor, budowa, ceny, marża i dostępność materiałów.</p></div>
+    <div class="process-item"><span class="process-n">02</span><span class="process-icon">▤</span><h3>Zatwierdzenie</h3><p>Limity kredytowe, rezerwacje i akceptacja rabatów.</p></div>
+    <div class="process-item"><span class="process-n">03</span><span class="process-icon">▣</span><h3>Przygotowanie</h3><p>PZ, WZ, kompletacja i zlecenia tartaku.</p></div>
+    <div class="process-item"><span class="process-n">04</span><span class="process-icon">▰</span><h3>Dostawa HDS</h3><p>Przydział pojazdu, kierowca, załadunek i POD.</p></div>
+    <div class="process-item"><span class="process-n">05</span><span class="process-icon">✓</span><h3>Rozliczenie</h3><p>Akceptacja dokumentów, wyjątki, należności i rentowność.</p></div>
+   </div>
+   <div class="process-bottom"><div class="process-callout"><span>W praktyce</span><strong>Biuro od razu widzi, czy kierowca dołączył prawidłowy dokument i czy dostawa wymaga wyjaśnienia.</strong></div><a class="text-link" href="./app/">Przetestuj obieg w aplikacji <span>↗</span></a></div>
+  </div></section>
+
+  <section id="grafika" class="section reference-showcase wrap" aria-labelledby="reference-title">
+   <div class="reference-heading"><div><span class="section-num">04 / GRAFIKA KONCEPCYJNA</span><h2 id="reference-title">Jeden obraz całego systemu.</h2></div><p>Wybrana grafika była punktem odniesienia dla palety i układu aplikacji. Pokazuje wizję pulpitu z hurtownią, elektryką, tartakiem i transportem HDS. Zawarte w niej liczby są przykładowe.</p></div>
+   <a class="reference-image-link" href="./screens/Centrum_Budowlane_Grafika_Referencyjna.webp" target="_blank" rel="noopener noreferrer" aria-label="Otwórz pełną grafikę koncepcyjną Centrum Budowlanego">
+    <img src="./screens/Centrum_Budowlane_Grafika_Referencyjna.webp" alt="Grafika koncepcyjna Centrum Budowlane w granacie i czerwieni: hurtownia budowlana, elektryczna, tartak, transport HDS i pulpit z KPI" loading="lazy" />
+    <span class="reference-image-zoom">Otwórz pełny obraz ↗</span>
+   </a>
+   <div class="reference-foot"><span>Grafika koncepcyjna</span><span>Granat #06152B · Czerwień #E30620</span><a href="./app/">Przeklikaj rzeczywistą aplikację ↗</a></div>
+  </section>
+
+  <section id="widoki" class="section screens wrap"><div class="section-head"><div><span class="section-num">04 / INTERFEJS</span><h2>Gotowe ekrany.<br>Realne scenariusze.</h2></div><p>Otwórz poszczególne widoki. Demonstracja działa w przeglądarce na komputerze i telefonie oraz zapisuje zmiany lokalnie.</p></div>
+    <div class="gallery"><div class="gallery-main"><div class="gallery-top"><span class="gallery-type" id="gallery-type">PULPIT CENTRUM</span><div class="gallery-controls"><button id="gallery-prev" aria-label="Poprzedni ekran">←</button><button id="gallery-next" aria-label="Następny ekran">→</button></div></div><a id="gallery-link" href="./app/" title="Uruchom demonstrację"><img id="gallery-img" src="./screens/Centrum_Budowlane_Dashboard_Desktop.png" alt="Zrzut ekranu: pulpit centrum budowlanego"/></a></div><div class="gallery-aside"><div class="gallery-indicator"><span id="gallery-number">01</span><span>/ 04</span></div><h3 id="gallery-title">Sytuacja firmy na jednym ekranie.</h3><p id="gallery-copy">Sprzedaż, marże, najpilniejsze zdarzenia i skróty do czterech działów.</p><div class="gallery-dots"><button class="gdot selected" data-screen="0" aria-label="Widok: pulpit"></button><button class="gdot" data-screen="1" aria-label="Widok: obieg dokumentów"></button><button class="gdot" data-screen="2" aria-label="Widok: kompletność zamówień"></button><button class="gdot" data-screen="3" aria-label="Widok mobilny"></button></div><a href="./app/" class="btn primary">Przeklikaj demo <span>↗</span></a></div></div>
+  </section>
+
+  <section class="section roles-section"><div class="wrap"><div class="section-head light"><div><span class="section-num">05 / ZESPÓŁ</span><h2>Inny widok.<br>Inne zadania.</h2></div><p>Role odpowiadają rzeczywistemu podziałowi pracy. W demo można przełączać je bez logowania, aby obejrzeć przepływ z różnych perspektyw.</p></div>
+   <div class="roles-shell"><div class="role-buttons" id="role-buttons" role="tablist" aria-label="Wybór roli"><button role="tab" aria-selected="true" data-role="zarzad">Zarząd</button><button role="tab" aria-selected="false" data-role="handlowiec">Handlowiec</button><button role="tab" aria-selected="false" data-role="magazyn">Magazyn</button><button role="tab" aria-selected="false" data-role="kierowca">Kierowca HDS</button><button role="tab" aria-selected="false" data-role="zakupy">Zakupy</button><button role="tab" aria-selected="false" data-role="ksiegowosc">Księgowość</button></div>
+   <div class="role-detail" id="role-detail"><span class="role-kicker">WYBRANA ROLA / 01</span><h3>Zarząd</h3><p>Pełny przekrój wyników, kosztów zatrudnienia, marż działów, należności, floty i ryzyk operacyjnych.</p><div class="role-points"><span>Rentowność i koszty</span><span>Kontrola ryzyk</span><span>Akceptacje</span></div><a href="./app/" class="text-link">Sprawdź w aplikacji ↗</a></div></div>
+   <p class="footnote inverse">Przełącznik ról w tej wersji ma charakter prezentacyjny. Bezpieczne konta pracowników i współdzielona baza danych wymagają wdrożenia backendu.</p>
+  </div></section>
+
+  <section id="technologia" class="section technology wrap"><div class="section-head"><div><span class="section-num">06 / TECHNOLOGIA</span><h2>Przygotowane do<br>testowania i rozwoju.</h2></div><p>Wersja demonstracyjna jest statyczną aplikacją JavaScript z PWA. Może działać na GitHub Pages, bez stawiania serwera aplikacyjnego.</p></div>
+  <div class="tech-grid"><div><span class="tech-n">01</span><h3>PWA i instalacja</h3><p>Manifest, service worker i możliwość uruchomienia w osobnym oknie z ekranu głównego telefonu.</p></div><div><span class="tech-n">02</span><h3>Import i eksport</h3><p>CSV, TSV, XLSX, tabele HTML, kopie JSON oraz dokumenty dostaw.</p></div><div><span class="tech-n">03</span><h3>Obieg operacyjny</h3><p>Zamówienia, magazyn, produkcja tartaku, transport, dokumenty i kalkulacje finansowe.</p></div><div><span class="tech-n">04</span><h3>Świadome ograniczenia</h3><p>Praca lokalna na jednym urządzeniu. Pełna synchronizacja i konta użytkowników pozostają etapem produkcyjnym.</p></div></div>
+  <div class="code-row"><div><span class="eyebrow">KOD I DOKUMENTACJA</span><h3>Jeden projekt. Dwie ścieżki poznania.</h3><p>Strona prezentacyjna pozwala poznać ideę i przebieg pracy. Demo pozwala przetestować funkcje, role oraz scenariusze.</p></div><div class="code-actions"><a class="btn primary" href="./app/">Uruchom demo ↗</a><a class="btn outline" href="./downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx" download>Excel finansowy ↓</a><a class="btn outline" href="https://github.com/lukaszst-cz/centrum-budowlane-pwa" target="_blank" rel="noopener noreferrer">Kod projektu na GitHubie ↗</a></div></div>
+  </section>
+
+  <section class="endcap"><div class="wrap endcap-inner"><div><span class="eyebrow">PROJEKT DEMONSTRACYJNY</span><h2>Procesy wreszcie<br>pracują razem.</h2><p>Poznaj pełną aplikację od strony zarządu, handlowca, magazyniera i kierowcy HDS.</p></div><a href="./app/" class="btn primary large">Wejdź do systemu <span>↗</span></a></div></section>
+ </main>
+ <footer class="footer"><div class="wrap footrow"><span>© 2026 Centrum Budowlane · koncepcja demonstracyjna</span><span>Projekt portfolio · Zielona Marka</span><a href="./design-system/">System wizualny</a><a href="#top">Wróć na górę ↑</a></div><p class="wrap smallprint">Materiały ilustracyjne i dane przykładowe. Wizualizacja główna nie przedstawia rzeczywistej firmy. Zdjęcia działów pochodzą z Pexels, informacje o źródłach znajdują się w dokumentacji projektu.</p></footer>
+ <script src="./showcase.js" defer></script>
+</body>
+</html>

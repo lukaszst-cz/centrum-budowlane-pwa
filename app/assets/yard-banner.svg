@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="380" viewBox="0 0 1120 380" fill="none">
+<defs>
+ <linearGradient id="sky" x1="140" y1="0" x2="1050" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#16375a"/><stop offset=".52" stop-color="#2b5a84"/><stop offset="1" stop-color="#112a47"/></linearGradient>
+ <linearGradient id="shed" x1="560" y1="100" x2="780" y2="345" gradientUnits="userSpaceOnUse"><stop stop-color="#3a5875"/><stop offset="1" stop-color="#162e4c"/></linearGradient>
+ <linearGradient id="ground" x1="600" y1="300" x2="680" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#345473"/><stop offset="1" stop-color="#1a304c"/></linearGradient>
+ <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#bdd6f1" stroke-opacity=".12" stroke-width="1"/></pattern>
+ <pattern id="panels" width="34" height="65" patternUnits="userSpaceOnUse"><path d="M33 0V65" stroke="#acc9dd" stroke-opacity=".16" stroke-width="2"/></pattern>
+ <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#071729" flood-opacity=".33"/></filter>
+</defs>
+<rect width="1120" height="380" fill="url(#sky)"/><rect width="1120" height="380" fill="url(#grid)"/>
+<!-- industrial horizon -->
+<path d="M140 278L460 234L1120 279V380H0Z" fill="url(#ground)"/><path d="M0 345L680 295L1120 348" stroke="#c2d8e6" stroke-opacity=".28" stroke-width="2"/>
+<!-- warehouse -->
+<g filter="url(#shadow)"><path d="M355 160L520 85L1028 126L1028 281L521 314L355 256Z" fill="url(#shed)"/>
+<path d="M355 160L520 85L1028 126L861 204Z" fill="#6d8ca8"/><path d="M355 160L520 85L1028 126" stroke="#9ab2c9" stroke-width="3"/>
+<path d="M520 85V314M355 160V256M1028 126V281" stroke="#99bdd9" stroke-opacity=".65" stroke-width="2"/>
+<path d="M521 127L1028 165V281L521 314Z" fill="url(#panels)"/>
+<path d="M626 182L825 191V306L626 311Z" fill="#0d263f" stroke="#91a9ba" stroke-width="3"/>
+<path d="M641 192L811 199V304L641 308Z" fill="#224461"/>
+<path d="M679 194V308M719 195V307M759 197V306" stroke="#7694a7" stroke-width="2"/>
+<rect x="870" y="190" width="114" height="78" rx="2" fill="#0c2941" stroke="#6589a5" stroke-width="4"/>
+<path d="M927 191V268" stroke="#6384a0" stroke-width="3"/>
+<path d="M365 165L516 96" stroke="#d93c43" stroke-width="7"/><path d="M520 99L1022 140" stroke="#ce3d43" stroke-width="6"/>
+</g>
+<!-- building materials pallets -->
+<g filter="url(#shadow)">
+ <g transform="translate(423 243)"><path d="M0 59L75 51L114 61L43 71Z" fill="#d5b38c"/><path d="M7 12L76 3L106 14L37 22Z" fill="#d6b290"/><path d="M7 12L37 22V64L7 55Z" fill="#aa694d"/><path d="M37 22L106 14V55L37 64Z" fill="#cc8056"/><path d="M8 24L35 34M8 38L35 48M39 34L104 25M39 48L104 38" stroke="#f0b17f" stroke-width="3"/></g>
+ <g transform="translate(532 250)"><path d="M0 43L64 39L112 50L48 58Z" fill="#bb9168"/><path d="M3 9L65 5L107 16L45 20Z" fill="#b0bdc5"/><path d="M3 9L45 20V55L3 43Z" fill="#7e929f"/><path d="M45 20L107 16V48L45 55Z" fill="#a4b2bf"/><path d="M11 20L44 28M11 33L44 41M49 30L105 25M49 41L105 37" stroke="#d6e1eb" stroke-width="2"/></g>
+ <g transform="translate(305 258)"><path d="M0 44L66 39L108 48L42 58Z" fill="#805f45"/><path d="M4 8L69 3L103 12L38 18Z" fill="#d8a967"/><path d="M4 8L38 18V54L4 43Z" fill="#b67d41"/><path d="M38 18L103 12V46L38 54Z" fill="#e0a05a"/><path d="M6 20L37 29M6 32L37 40M39 30L101 24M39 41L101 36" stroke="#f2c789" stroke-width="2"/></g>
+</g>
+<!-- vehicle shadow -->
+<ellipse cx="875" cy="325" rx="198" ry="23" fill="#041c32" opacity=".46"/>
+<!-- HDS truck -->
+<g filter="url(#shadow)"><path d="M717 280H953V321H717Z" fill="#c6d1d9"/><path d="M719 280L764 267H934L953 280Z" fill="#8295a8"/><path d="M942 280H1007L1033 307V322H942Z" fill="#c9d8e3"/><path d="M968 286H999L1016 304H968Z" fill="#2b577e"/><path d="M942 320V280L949 279V320Z" fill="#b7c8d3"/><path d="M1009 310H1034V318H1009Z" fill="#d33b42"/><path d="M718 299H940" stroke="#607990" stroke-width="6"/><path d="M747 317H1023" stroke="#15283c" stroke-width="8"/>
+<circle cx="778" cy="327" r="19" fill="#0b1522" stroke="#95a2ab" stroke-width="4"/><circle cx="778" cy="327" r="7" fill="#8c9cac"/><circle cx="911" cy="327" r="19" fill="#0b1522" stroke="#95a2ab" stroke-width="4"/><circle cx="911" cy="327" r="7" fill="#8c9cac"/><circle cx="991" cy="327" r="19" fill="#0b1522" stroke="#95a2ab" stroke-width="4"/><circle cx="991" cy="327" r="7" fill="#8c9cac"/>
+<!-- HDS boom -->
+<path d="M794 269L814 235L879 154L897 166L827 252L818 280Z" fill="#cf3841" stroke="#8a2433" stroke-width="3"/><path d="M884 156L936 114L949 124L903 166Z" fill="#e25055" stroke="#8a2433" stroke-width="3"/><path d="M932 115L985 123" stroke="#c7d5df" stroke-width="7"/><path d="M988 124V205" stroke="#b4c5d1" stroke-width="3"/><path d="M987 205l-8 12h16z" fill="#d8c4a3"/>
+<circle cx="810" cy="259" r="12" fill="#162c47" stroke="#c74c57" stroke-width="5"/><path d="M814 250L890 161" stroke="#f78e81" stroke-width="3"/>
+</g>
+<!-- blueprint decorative -->
+<g opacity=".65" stroke="#a1cae8" stroke-width="1.5"><path d="M144 70H260M144 70v65M260 70v65M144 135h116" stroke-dasharray="5 7"/><path d="M155 110h93"/><path d="M202 70v65"/><circle cx="202" cy="102" r="42" stroke-opacity=".38"/></g>
+<path d="M0 365L1120 365" stroke="#8faac2" stroke-opacity=".2" stroke-width="2"/>
+</svg>

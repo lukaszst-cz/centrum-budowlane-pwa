@@ -1,0 +1,26 @@
+/* Rozwinięcie systemu wizualnego: ta sama kolorystyka i interakcje co w PWA. */
+:root{--navy:var(--cb-navy-950);--navy2:var(--cb-navy-800);--red:var(--cb-red-600);--red2:var(--cb-red-700);--paper:var(--cb-canvas);--text:var(--cb-ink);--muted:var(--cb-muted);--line:var(--cb-border);font-family:var(--cb-font-ui)}
+.sitehead{background:#06152b}.logo,.nav a{font-family:var(--cb-font-ui)}.nav-cta{background:var(--cb-red-600)!important}.nav-cta:hover{background:var(--cb-red-700)!important}
+.hero{background:var(--cb-navy-950)}.hero-photo{filter:saturate(1.05) contrast(1.03)}.hero h1{font-family:var(--cb-font-display);font-weight:800;letter-spacing:-.018em}
+.hero .flag-line,.flag-line{background:var(--cb-red-600)}.btn.primary{background:var(--cb-red-600);border-color:var(--cb-red-600)}.btn.primary:hover{background:var(--cb-red-700)}
+.section h2,.section-head h2{font-family:var(--cb-font-display);letter-spacing:-.024em}.department-card{border-radius:8px}.department-card:hover .dept-photo{transform:scale(1.045)}.dept-content h3{font-family:var(--cb-font-display)}.dept-index{color:#ff6775}
+.roles-section{background:var(--cb-navy-900)}.role-buttons button[aria-selected=true]{background:var(--cb-red-600);border-color:var(--cb-red-600)}.gallery{background:var(--cb-navy-800)}.gdot.selected{background:var(--cb-red-600)}
+.endcap{background:var(--cb-navy-900);border-color:var(--cb-red-600)}.process-icon{color:var(--cb-red-600);border-color:var(--cb-red-600)}
+:focus-visible{outline:3px solid #ff6474;outline-offset:3px}
+
+
+/* Grafika referencyjna projektu, pełny obraz i wyraźne przejście do dema. */
+.reference-showcase{padding-top:76px;padding-bottom:82px}
+.reference-heading{display:grid;grid-template-columns:1fr minmax(280px,410px);align-items:end;gap:30px;margin-bottom:25px}
+.reference-heading h2{font-size:clamp(2rem,4.5vw,3.5rem);margin:12px 0 0;line-height:1.1}
+.reference-heading p{margin:0;line-height:1.65;max-width:44ch;color:#516274}
+.reference-image-link{position:relative;display:block;overflow:hidden;background:#06152b;border-radius:14px;border:1px solid #d2dce5;box-shadow:0 30px 70px rgba(5,25,50,.17)}
+.reference-image-link img{display:block;width:100%;height:auto;transition:transform .3s ease}
+.reference-image-link:hover img{transform:scale(1.015)}
+.reference-image-zoom{position:absolute;right:20px;bottom:20px;color:white;background:#ba0b26;padding:11px 16px;border-radius:7px;font-weight:800;font-size:.84rem;box-shadow:0 8px 22px #0006}
+.reference-image-link:hover .reference-image-zoom{background:#e30620}
+.reference-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid #dbe4ec;padding:16px 2px;color:#526b7e;font-size:.85rem}
+.reference-foot a{font-weight:800;color:#b90d25;text-decoration:none}
+.reference-foot a:hover{text-decoration:underline}
+@media(max-width:760px){.reference-showcase{padding-top:48px;padding-bottom:55px}.reference-heading{grid-template-columns:1fr;gap:15px}.reference-image-zoom{right:10px;bottom:10px;padding:8px 11px;font-size:.7rem}.reference-foot{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.reference-image-link img{transition:none}}

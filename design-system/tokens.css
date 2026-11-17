@@ -1,0 +1,24 @@
+/* Centrum Budowlane: wspólne tokeny dla aplikacji i strony projektu. */
+:root {
+ --cb-navy-950:#06152B;
+ --cb-navy-900:#0A203B;
+ --cb-navy-800:#0D2C4F;
+ --cb-navy-700:#17446C;
+ --cb-red-600:#E30620;
+ --cb-red-700:#B90D25;
+ --cb-red-050:#FFF1F3;
+ --cb-blue-500:#0877D2;
+ --cb-paper:#FFFFFF;
+ --cb-canvas:#F2F5F9;
+ --cb-ink:#10263F;
+ --cb-muted:#64788E;
+ --cb-border:#DCE5EF;
+ --cb-success:#15805E;
+ --cb-warning:#D18A00;
+ --cb-radius-sm:6px;
+ --cb-radius-md:10px;
+ --cb-radius-lg:14px;
+ --cb-shadow:0 8px 22px rgba(6,21,43,.08);
+ --cb-font-ui:'Inter',system-ui,Arial,sans-serif;
+ --cb-font-display:'Roboto Condensed','Inter',system-ui,Arial,sans-serif;
+}
