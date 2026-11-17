@@ -23,11 +23,11 @@ Vercel jest połączony z gałęzią `main` i automatycznie publikuje zmiany. Ob
 ## Aktualizowanie publikacji
 
 1. Zapisz zatwierdzone zmiany w gałęzi `main`.
-2. Vercel wdroży je automatycznie.
-3. Aby odświeżyć GitHub Pages, otwórz [Actions: Publikacja GitHub Pages](https://github.com/lukaszst-cz/centrum-budowlane-pwa/actions/workflows/pages.yml) i wybierz `Run workflow` dla gałęzi `main`.
+2. Vercel i GitHub Pages opublikują je automatycznie. Workflow Pages działa po wypchnięciu zmian do `main`.
+3. Możesz również uruchomić Pages ręcznie przez [Actions: Publikacja GitHub Pages](https://github.com/lukaszst-cz/centrum-budowlane-pwa/actions/workflows/pages.yml) i `Run workflow`.
 4. Po zakończeniu sprawdź osobno stronę, aplikację i pobieranie pliku XLSX.
 
-Workflow GitHub Pages ma wyłącznie ręczne wyzwalanie (`workflow_dispatch`). Nie trzeba włączać automatycznej publikacji, jeśli wystarczy obecny przepływ przez Vercel.
+Publikacja GitHub Pages wykorzystuje wyzwalacze `push` dla `main` i `workflow_dispatch`, bez dodatkowych harmonogramów.
 
 ## Ograniczenia demonstracji
 
