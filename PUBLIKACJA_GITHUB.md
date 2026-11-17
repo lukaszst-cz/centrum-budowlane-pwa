@@ -1,24 +1,34 @@
 # Publikacja Centrum Budowlane PWA
 
-## Aktualny stan
+## Stan projektu (17.11.2026)
 
-Aplikacja i strona prezentacyjna są już opublikowane na Vercelu:
+Repozytorium [centrum-budowlane-pwa](https://github.com/lukaszst-cz/centrum-budowlane-pwa) jest publiczne. Zawiera 43 pliki projektu, w tym stronę prezentacyjną, aplikację PWA, dokumentację, grafiki i model finansowy XLSX.
 
-- Strona projektu: https://centrum-budowlane-pwa.vercel.app/
-- Aplikacja: https://centrum-budowlane-pwa.vercel.app/app/
-- Excel: https://centrum-budowlane-pwa.vercel.app/downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx
+### GitHub Pages
 
-Repozytorium źródłowe: https://github.com/lukaszst-cz/centrum-budowlane-pwa. Jest obecnie prywatne. Vercel jest podłączony do gałęzi `main` i publikuje jej zmiany.
+- [Strona prezentacyjna](https://lukaszst-cz.github.io/centrum-budowlane-pwa/)
+- [Aplikacja PWA](https://lukaszst-cz.github.io/centrum-budowlane-pwa/app/)
+- [Model finansowy Excel](https://lukaszst-cz.github.io/centrum-budowlane-pwa/downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx)
 
-## Jeśli w przyszłości chcesz uruchomić GitHub Pages
+Po aktywowaniu Pages ponowiono [workflow publikacyjny](https://github.com/lukaszst-cz/centrum-budowlane-pwa/actions/workflows/pages.yml). Druga próba uruchomienia [przebiegu #44063294909](https://github.com/lukaszst-cz/centrum-budowlane-pwa/actions/runs/44063294909) zakończyła się sukcesem. Strona, aplikacja i plik XLSX zwracały HTTP 200 w kontroli 17.11.2026. Wcześniejsze błędy dotyczyły nieaktywnej usługi Pages, a nie błędu kompilacji aplikacji.
 
-1. W GitHub `Settings → General → Danger Zone` zmień repozytorium na publiczne, jeśli chcesz udostępniać też źródła.
-2. W `Settings → Pages` wybierz `Source: GitHub Actions`, jeżeli taka opcja jest dostępna.
-3. Uruchom ręcznie workflow `Publikacja GitHub Pages` w zakładce Actions.
-4. Sprawdź wynik oraz linki do strony, aplikacji i Excela.
+### Vercel
 
-GitHub Pages nie jest obecnie potrzebny do demonstracji. Automatyczne próby uruchamiania Pages na prywatnym repozytorium zostały wyłączone.
+- [Strona prezentacyjna](https://centrum-budowlane-pwa.vercel.app/)
+- [Aplikacja](https://centrum-budowlane-pwa.vercel.app/app/)
+- [Model finansowy Excel](https://centrum-budowlane-pwa.vercel.app/downloads/Centrum_Budowlane_Model_Finansowy_2026.xlsx)
+
+Vercel jest połączony z gałęzią `main` i automatycznie publikuje zmiany. Obie publikacje są publiczne i nie wymagają logowania.
+
+## Aktualizowanie publikacji
+
+1. Zapisz zatwierdzone zmiany w gałęzi `main`.
+2. Vercel wdroży je automatycznie.
+3. Aby odświeżyć GitHub Pages, otwórz [Actions: Publikacja GitHub Pages](https://github.com/lukaszst-cz/centrum-budowlane-pwa/actions/workflows/pages.yml) i wybierz `Run workflow` dla gałęzi `main`.
+4. Po zakończeniu sprawdź osobno stronę, aplikację i pobieranie pliku XLSX.
+
+Workflow GitHub Pages ma wyłącznie ręczne wyzwalanie (`workflow_dispatch`). Nie trzeba włączać automatycznej publikacji, jeśli wystarczy obecny przepływ przez Vercel.
 
 ## Ograniczenia demonstracji
 
-Dane pozostają lokalnie w przeglądarce. Przełączanie ról nie jest uwierzytelnianiem. Przed wdrożeniem dla rzeczywistych pracowników wymagane są backend, role serwerowe, wspólna baza danych i bezpieczny obieg dokumentów.
+Aplikacja korzysta z danych symulacyjnych i lokalnego zapisu w przeglądarce. Przełączanie ról nie jest bezpiecznym uwierzytelnianiem. Przed wdrożeniem dla rzeczywistych pracowników wymagane są backend, serwerowe uprawnienia, wspólna baza danych i bezpieczny obieg dokumentów. Projekt nie jest wdrożeniem dla klienta.
